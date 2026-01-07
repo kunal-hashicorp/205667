@@ -1,11 +1,5 @@
-resource "null_resource" "example1" {
-  provisioner "local-exec" {
-    command = "echo 'I am testing example1'"
-  }
-}
-
-resource "null_resource" "example_2" {
-  provisioner "local-exec" {
-    command = "echo 'This is the second null resource'"
-  }
+resource "tfe_organization" "platform" {
+  name                                                    = "platform"
+  email                                                   = xyz@example.com
+  send_passing_statuses_for_untriggered_speculative_plans = true
 }
