@@ -17,8 +17,8 @@ provider "tfe" {
   # It will be read from the TFE_TOKEN environment variable
 }
 
-resource "tfe_organization" "ks_test1" {
-  name  = "ks-test"
+resource "tfe_organization" "ks_test" {
+  name  = "ks-test1"
   email = "xyz@example.com"
 
   # This is the setting you are testing
